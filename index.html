@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tebak Angka Erlangga dan Fahdy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-primary text-white text-center py-5">
+  <div class="container">
+    <h1 class="display-4">🎯 Tebak Angka</h1>
+  </div>
+</header>
+
+<!-- About -->
+<section class="py-5 bg-light" id="about">
+  <div class="container">
+    <h2 class="mb-4">Tentang Game</h2>
+    <p>
+      “Tebak Angka” adalah game sederhana di mana pemain harus menebak angka acak yang dipilih komputer antara 1 hingga 100. Game ini dibangun menggunakan HTML, CSS, JavaScript, dan Bootstrap.
+    </p>
+  </div>
+</section>
+
+<!-- Play -->
+<section class="py-5" id="play">
+  <div class="container">
+    <h2 class="mb-4">Mainkan Sekarang</h2>
+    <div class="card p-4 shadow-sm">
+      <input type="number" id="guessInput" class="form-control mb-3" placeholder="Masukkan angka 1–100" min="1" max="100">
+      <button onclick="checkGuess()" class="btn btn-success">Tebak</button>
+      <div id="resultMessage" class="alert mt-3 d-none"></div>
+      <button onclick="restartGame()" class="btn btn-secondary mt-3">Main Lagi</button>
+    </div>
+  </div>
+</section>
+
+<!-- How to Play -->
+<section class="py-5 bg-light" id="how">
+  <div class="container">
+    <h2 class="mb-4">Cara Bermain</h2>
+    <ul>
+      <li>Masukkan angka antara 1 hingga 100.</li>
+      <li>Tekan tombol “Tebak”.</li>
+      <li>Akan muncul petunjuk: terlalu tinggi, rendah, atau benar.</li>
+      <li>Tekan “Main Lagi” untuk mengulang permainan.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Credit -->
+<section class="py-5" id="credit">
+  <div class="container text-center">
+    <h2 class="mb-4">Dibuat Oleh</h2>
+    <p><strong>Nama : </strong>Erlangga Ramzi Putra dan Muhammad Fahdy Akbar</p>
+    <p><strong>Kelas : </strong>XI RPL - 4</p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  <div class="container">
+    <p>Source code: <a href="#" class="text-white" id="repoLink">GitHub</a> | Demo: <a href="#" class="text-white" id="demoLink">Live</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
